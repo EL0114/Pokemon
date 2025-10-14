@@ -19,7 +19,3 @@ A simple and interactive Pokémon web app that allows users to browse, search, a
 - **PokéAPI** – Pokémon data source  
 - **GitHub Pages** – Hosting and deployment  
 ---
-## ⚙️ How to Run Locally
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/EL0114/Pokemon.git
