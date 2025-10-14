@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PokéDex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="header-img">
+      <img id="pokeball" src="./src/images/Pokeball.png" alt="Pokéball" />
+    </div>
+
+    <div class="container-search">
+      <h2><span id="search-header">PokéDex</span></h2>
+      <input type="text" id="search-bar" placeholder="Search Pokémon" />
+      <button type="submit" id="search-btn">Search</button>
+      <button id="browse-btn">Browse Pokémon</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="pokemonModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h3>Select a Pokémon</h3>
+        <input type="text" id="filterInput" placeholder="Filter Pokémon..." />
+        <ul id="pokemonList" class="pokemon-list"></ul>
+        <div class="pagination">
+          <button id="prevPage">Previous</button>
+          <span id="pageInfo">Page 1</span>
+          <button id="nextPage">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="pokemonContainer" class="pokemon-card"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
