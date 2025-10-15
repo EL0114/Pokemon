@@ -201,3 +201,116 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+/* ===============================
+   RESPONSIVE DESIGN
+   =============================== */
+
+/* Medium screens (Tablets, <992px) */
+@media (max-width: 992px) {
+  body {
+    padding: 20px;
+  }
+
+  #search-bar {
+    width: 180px;
+    font-size: 15px;
+  }
+
+  #search-btn,
+  #browse-btn {
+    width: 110px;
+    font-size: 14px;
+  }
+
+  .pokemon-card {
+    gap: 20px;
+  }
+
+  .card {
+    width: 260px;
+  }
+
+  .card-img {
+    height: 160px;
+  }
+}
+
+/* Small screens (Phones, <600px) */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  .container-search {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #pokeball {
+    height: 65px;
+  }
+
+  #search-bar {
+    width: 90%;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  #search-btn,
+  #browse-btn {
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .pokemon-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .card-img {
+    height: 150px;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .card-name {
+    font-size: 1rem;
+  }
+
+  .card-desc {
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra small screens (<400px) */
+@media (max-width: 400px) {
+  #search-bar {
+    font-size: 13px;
+  }
+
+  #search-btn,
+  #browse-btn {
+    font-size: 13px;
+  }
+
+  .card {
+    width: 95%;
+    padding: 6px;
+  }
+
+  .card-desc {
+    font-size: 0.8rem;
+  }
+}
